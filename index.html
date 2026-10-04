@@ -172,9 +172,21 @@
     <p class="text-right">- BeBu</p>
 
 </div>
- </div>
+    </div>
+
+    <!-- BACKGROUND MUSIC -->
+    <audio id="bgMusic" loop>
+        <source src="love.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        const card = document.querySelector('.card');
+        const music = document.getElementById('bgMusic');
+
+        card.addEventListener('click', () => {
+            music.play();
+        });
+    </script>
 
 </body>
-
 </html>
-
